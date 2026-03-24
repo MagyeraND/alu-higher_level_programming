@@ -10,5 +10,5 @@ def fizzbuzz():
         else:
             print("{:d}".format(i), end="")
         
-        if i != 100:
-            print(" ", end="")
+        # Always print a space, even after 100
+        print(" ", end="")
