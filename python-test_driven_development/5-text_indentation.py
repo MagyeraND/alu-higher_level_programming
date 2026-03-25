@@ -3,13 +3,10 @@
 
 
 def text_indentation(text):
-    """Prints text with 2 new lines after each ., ? and :.
-    Leading/trailing spaces in each line are removed.
-    """
+    """Indents text after . ? and :"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     
-    chars = [".", "?", ":"]
-    for c in chars:
-        text = (c + "\n\n").join([line.strip(" ") for line in text.split(c)])
+    for char in ".?:":
+        text = (char + "\n\n").join([line.strip(" ") for line in text.split(char)])
     print(text, end="")

@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-"""Module to print a name."""
+"""Module to print name."""
 
 
 def say_my_name(first_name, last_name=""):
-    """Prints My name is <first name> <last name>.
-    Raises TypeError if names are not strings.
-    """
+    """Prints a name."""
     if not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
